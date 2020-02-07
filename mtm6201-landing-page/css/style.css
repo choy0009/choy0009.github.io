@@ -1,0 +1,364 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    color: #333131;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* mobile view */
+
+@media screen and (max-width:35rem){
+    p {
+        font-size: 1rem;
+        margin: 1.5rem;
+    }
+    h1 {
+        font-weight: bolder;
+        font-size: 3rem;
+        margin: 1.5rem;
+    }
+    h2 {
+        font-weight: bolder;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .tiny-text {
+        font-size: 0.75rem;
+    }
+    .first-form {
+        border: 1px solid white;
+        border-radius: 20px;
+        /* adding drop shadow */
+        box-shadow: 3px 3px 3px 3px gray;
+        width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .actual-form label, .actual-form input {
+        /* extend the input box the length of the form */
+        display: block;
+        width: 95%;
+        border-radius: 7px;
+    }
+    .bold-footer {
+    font-weight: bold;
+    }
+    .footer-form label, .footer-form input {
+        /* round the edges of the inpuut boxes */
+        border-radius: 7px;
+    }
+    .footer-form {
+        margin: 1.5rem;
+    }
+    .footer-form section {
+        /* space the input boxes evenly */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .green-button ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .green-button {
+        background-color: #57eeab;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .green-button a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    footer {
+        background-color: #fffd8c;
+    }
+    .pink-button ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .pink-button {
+        background-color: #ff8480;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .pink-button a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    .icons {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 30px;
+    }
+    .logo {
+        width: 30%;
+        margin: 1.5rem;
+    }
+    .link {
+        color: #ff8480;
+        text-decoration: none;
+    }
+    .bar {
+        padding: 5px;
+    }
+}
+
+/* tablet view */
+
+    @media screen and (min-width:35rem) {
+        p {
+            font-size: 1.5rem;
+            margin: 1.5rem;
+        }
+        h1 {
+            font-weight: bolder;
+            font-size: 3rem;
+            margin: 1.5rem;
+        }
+        h2 {
+            font-weight: bolder;
+            font-size: 2rem;
+            margin: 1.5rem;
+        }
+        .tiny-text {
+            font-size: 1rem;
+        }
+        .first-form {
+            border: 1px solid white;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px 3px gray;
+            width: 60%;
+            height: 70%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .actual-form label, .actual-form input {
+            display: block;
+            width: 100%;
+            border-radius: 7px;
+        }
+        .bold-footer {
+        font-weight: bold;
+        font-size: 1rem;
+        }
+        .regular-footer {
+            font-size: 1rem;
+        }
+        .footer-form label, .footer-form input {
+            border-radius: 7px;
+        }
+        .footer-form {
+            margin: 1.5rem;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .footer-form section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .green-button ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .green-button {
+            background-color: #57eeab;
+            padding: 10px;
+            border-radius: 10px;
+            width: 95%;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .green-button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #fffd8c;
+        }
+        .pink-button ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .pink-button {
+            background-color: #ff8480;
+            padding: 5px;
+            border-radius: 10px;
+            width: 30%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .pink-button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .icons {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            max-width: 300px;
+            padding: 30px;
+        }
+        .logo {
+            width: 20%;
+            margin: 1.5rem;
+        }
+        .bg-image {
+            width: 70%;
+            margin: 10px;
+            margin-left: 80px;
+        }
+        .link {
+            color: #ff8480;
+            text-decoration: none;
+        }
+        .bar {
+            padding: 5px;
+        }
+    }
+
+    /* desktop view */
+
+    @media screen and (min-width:80rem) {
+        body {
+            background-image: url("scooter.svg");
+        }
+        p {
+            font-size: 1rem;
+            margin: 2rem;
+        }
+        h1 {
+            font-weight: bolder;
+            font-size: 4rem;
+            margin: 2rem;
+        }
+        h2 {
+            font-weight: bolder;
+            font-size: 2rem;
+            margin: 2rem;
+        }
+        .tiny-text {
+            font-size: 0.85rem;
+        }
+        .first-form {
+            border: 1px solid white;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px 3px gray;
+            width: 60%;
+            height: 70%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .actual-form label, .actual-form input {
+            display: block;
+            width: 90%;
+            border-radius: 7px;
+        }
+        .bold-footer {
+        font-weight: bold;
+        font-size: 1rem;
+        }
+        .regular-footer {
+            font-size: 1rem;
+        }
+        .footer-form label, .footer-form input {
+            border-radius: 7px;
+        }
+        .footer-form {
+            margin: 2rem;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .footer-form section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .green-button ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .green-button {
+            background-color: #57eeab;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .green-button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #fffd8c;
+            display: flex;
+        }
+        .pink-button ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .pink-button {
+            background-color: #ff8480;
+            padding: 5px;
+            border-radius: 10px;
+            width: 10%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .pink-button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .s1{
+            flex-grow: 3;
+        }
+        .icons {
+            text-align: right;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            max-width: 300px;
+            padding: 30px;
+            flex-grow: 1;
+        }
+        .logo {
+            margin: 1rem;
+            width: 5%;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 2fr 2fr 3fr;
+        }
+        .bg-image {
+            width: 100%;
+        }
+        .link {
+            color: #ff8480;
+            text-decoration: none;
+        }
+        /* to make the input boxes bigger */
+        .bar {
+            padding: 8px;
+        }
+    }
