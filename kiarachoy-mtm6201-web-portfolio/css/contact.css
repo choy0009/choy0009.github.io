@@ -1,0 +1,377 @@
+/* I had the same problem as last time with the stylesheets so I had to (again) make seperate stylesheets for each page - sorry */
+
+nav {
+    font-family: 'Old Standard TT', serif;
+}
+
+h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 3rem;
+    color: darkgoldenrod;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.4;
+    margin: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* ran into problems creating a hamburger menu to match the mockup so I just created a regular mobile menu */
+    .logo {
+        width: 100%;
+    }
+
+    .site-header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-header ul li {
+        background-color: black;
+        border-bottom: 1px solid black;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .site-header li a {
+        display: block;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .site-header li a:hover {
+        color: black;
+        background-color: white;
+        text-decoration: underline;
+    }
+
+    form button {
+        width: 100%;
+        color: white;
+        background: black;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        color: black;
+        background: white;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-nav ul li {
+        background-color: black;
+        border-top: 1px solid black;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .footer-nav li a {
+        display: block;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .footer-nav li a:hover {
+        color: black;
+        background-color: white;
+        text-decoration: underline;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid darkgoldenrod; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+      
+      /* Style the submit button with a specific background color etc */
+      input[type=submit] {
+        background-color: white;
+        color: darkgoldenrod;
+        padding: 12px 20px;
+        border: 1px solid darkgoldenrod;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+      
+      input[type=submit]:hover {
+        background-color: darkgoldenrod;
+        color: white;
+    }
+      
+      /* Add a background color and some padding around the form */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 960px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .site-header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .site-header ul {
+        display: flex;
+    }
+
+    .site-header li a {
+        display: block;
+        background-color: white;
+        color: darkgoldenrod;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .site-header li a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+    }
+
+    .logo {
+        width: 40%;
+        height: 40%;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 150%;
+        color: black;
+        background: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        color: black;
+        background: white;
+        border: 1px solid black;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px; 
+        border: 1px solid darkgoldenrod;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+      input[type=submit] {
+        background-color: white;
+        color: darkgoldenrod;
+        padding: 12px 20px;
+        border: 1px solid darkgoldenrod;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+      input[type=submit]:hover {
+        background-color: darkgoldenrod;
+        color: white;
+    }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-nav ul li {
+        background-color: white;
+        border-top: 1px solid black;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .footer-nav li a {
+        display: block;
+        background-color: white;
+        color: darkgoldenrod;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .footer-nav li a:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    
+    h1 {
+        text-align: center;
+    }
+
+    .logo {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .site-header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .site-header ul {
+        display: flex;
+    }
+
+    .site-header li a {
+        display: block;
+        background-color: white;
+        color: darkgoldenrod;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 1.3rem;
+    }
+
+    .site-header li a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+    }
+
+    form button {
+        width: 100%;
+        color: black;
+        background: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+
+    form button:hover {
+        color: black;
+        background: white;
+        border: 1px solid black;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px; 
+        border: 1px solid darkgoldenrod;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    input[type=submit] {
+        background-color: white;
+        color: darkgoldenrod;
+        padding: 12px 20px;
+        border: 1px solid darkgoldenrod;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: darkgoldenrod;
+        color: white;
+    }
+      
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 30px;
+        width: 401px;
+        margin-left: 35%;
+    }
+
+    .footer-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-nav ul li {
+        background-color: white;
+        border-top: 1px solid black;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .footer-nav li a {
+        display: block;
+        background-color: white;
+        color: darkgoldenrod;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .footer-nav li a:hover {
+        color: black;
+        background-color: white;
+    }
+}
